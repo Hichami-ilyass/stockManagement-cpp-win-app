@@ -116,18 +116,24 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.5.3">
-      <HintPath>..\..\..\..\..\Downloads\Bunifu_UI_v1.5.3.dll</HintPath>
+      <HintPath>..\..\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
     <Reference Include="FlatButton">
-      <HintPath>..\..\..\..\..\Downloads\JControls\JControls\FlatButton.dll</HintPath>
+      <HintPath>..\..\..\Desktop\JControls\FlatButton.dll</HintPath>
     </Reference>
     <Reference Include="JDragControl">
       <HintPath>..\..\..\..\..\Downloads\JControls\JControls\JDragControl.dll</HintPath>
     </Reference>
+    <Reference Include="JMetroTextBox">
+      <HintPath>..\..\..\Desktop\JControls\JMetroTextBox.dll</HintPath>
+    </Reference>
     <Reference Include="JTextBox">
-      <HintPath>C:\Users\othman\Desktop\JTextBox.dll</HintPath>
+      <HintPath>..\..\..\Downloads\JTextBox.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks">
+      <HintPath>Microsoft.VisualBasic.PowerPacks</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
@@ -137,13 +143,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ClientAdd.cpp" />
+    <ClCompile Include="ClientModufy.cpp" />
+    <ClCompile Include="ClientUserControl.cpp" />
     <ClCompile Include="LoginForm.cpp" />
     <ClCompile Include="mainForm.cpp" />
     <ClCompile Include="ProductAdd.cpp" />
     <ClCompile Include="ProductModify.cpp" />
     <ClCompile Include="ProductUserControl.cpp" />
+    <ClCompile Include="PurchaseAdd.cpp" />
+    <ClCompile Include="PurchaseModify.cpp" />
+    <ClCompile Include="purchaseUserControl.cpp" />
+    <ClCompile Include="SalesAdd.cpp" />
+    <ClCompile Include="SalesModify.cpp" />
+    <ClCompile Include="SalesUserControl.cpp" />
+    <ClCompile Include="SupplierAdd.cpp" />
+    <ClCompile Include="SupplierModify.cpp" />
+    <ClCompile Include="SupplierUserControlcpp.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ClientAdd.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ClientModufy.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ClientUserControl.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
     <ClInclude Include="LoginForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -159,9 +186,45 @@
     <ClInclude Include="ProductUserControl.h">
       <FileType>CppControl</FileType>
     </ClInclude>
+    <ClInclude Include="PurchaseAdd.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="PurchaseModify.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="purchaseUserControl.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
     <ClInclude Include="resource.h" />
+    <ClInclude Include="SalesAdd.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="SalesModify.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="SalesUserControl.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="SupplierAdd.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="SupplierModify.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="SupplierUserControlcpp.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ClientAdd.resx">
+      <DependentUpon>ClientAdd.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientModufy.resx">
+      <DependentUpon>ClientModufy.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientUserControl.resx">
+      <DependentUpon>ClientUserControl.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.h</DependentUpon>
     </EmbeddedResource>
@@ -176,6 +239,33 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ProductUserControl.resx">
       <DependentUpon>ProductUserControl.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseAdd.resx">
+      <DependentUpon>PurchaseAdd.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseModify.resx">
+      <DependentUpon>PurchaseModify.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="purchaseUserControl.resx">
+      <DependentUpon>purchaseUserControl.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesAdd.resx">
+      <DependentUpon>SalesAdd.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesModify.resx">
+      <DependentUpon>SalesModify.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesUserControl.resx">
+      <DependentUpon>SalesUserControl.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupplierAdd.resx">
+      <DependentUpon>SupplierAdd.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupplierModify.resx">
+      <DependentUpon>SupplierModify.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupplierUserControlcpp.resx">
+      <DependentUpon>SupplierUserControlcpp.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

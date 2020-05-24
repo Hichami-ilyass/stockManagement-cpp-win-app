@@ -1,5 +1,9 @@
 #pragma once
 #include "ProductUserControl.h"
+#include "ClientUserControl.h"
+#include "SupplierUserControlcpp.h"
+#include "purchaseUserControl.h"
+#include "SalesUserControl.h"
 
 
 namespace stockManagement {
@@ -115,48 +119,43 @@ namespace stockManagement {
 			this->navBar->Dock = System::Windows::Forms::DockStyle::Top;
 			this->navBar->LeftSahddow = false;
 			this->navBar->Location = System::Drawing::Point(0, 0);
-			this->navBar->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->navBar->Name = L"navBar";
 			this->navBar->RightSahddow = true;
 			this->navBar->ShadowDepth = 20;
-			this->navBar->Size = System::Drawing::Size(1800, 100);
+			this->navBar->Size = System::Drawing::Size(1350, 81);
 			this->navBar->TabIndex = 0;
 			// 
 			// botMainMarg
 			// 
 			this->botMainMarg->Dock = System::Windows::Forms::DockStyle::Bottom;
-			this->botMainMarg->Location = System::Drawing::Point(0, 866);
-			this->botMainMarg->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->botMainMarg->Location = System::Drawing::Point(0, 704);
 			this->botMainMarg->Name = L"botMainMarg";
-			this->botMainMarg->Size = System::Drawing::Size(1800, 31);
+			this->botMainMarg->Size = System::Drawing::Size(1350, 25);
 			this->botMainMarg->TabIndex = 1;
 			// 
 			// topMainMarg
 			// 
 			this->topMainMarg->BackColor = System::Drawing::Color::WhiteSmoke;
 			this->topMainMarg->Dock = System::Windows::Forms::DockStyle::Top;
-			this->topMainMarg->Location = System::Drawing::Point(0, 100);
-			this->topMainMarg->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->topMainMarg->Location = System::Drawing::Point(0, 81);
 			this->topMainMarg->Name = L"topMainMarg";
-			this->topMainMarg->Size = System::Drawing::Size(1800, 31);
+			this->topMainMarg->Size = System::Drawing::Size(1350, 25);
 			this->topMainMarg->TabIndex = 2;
 			// 
 			// rightMainMarg
 			// 
 			this->rightMainMarg->Dock = System::Windows::Forms::DockStyle::Right;
-			this->rightMainMarg->Location = System::Drawing::Point(1767, 131);
-			this->rightMainMarg->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->rightMainMarg->Location = System::Drawing::Point(1325, 106);
 			this->rightMainMarg->Name = L"rightMainMarg";
-			this->rightMainMarg->Size = System::Drawing::Size(33, 735);
+			this->rightMainMarg->Size = System::Drawing::Size(25, 598);
 			this->rightMainMarg->TabIndex = 3;
 			// 
 			// leftMainMarg
 			// 
 			this->leftMainMarg->Dock = System::Windows::Forms::DockStyle::Left;
-			this->leftMainMarg->Location = System::Drawing::Point(0, 131);
-			this->leftMainMarg->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->leftMainMarg->Location = System::Drawing::Point(0, 106);
 			this->leftMainMarg->Name = L"leftMainMarg";
-			this->leftMainMarg->Size = System::Drawing::Size(33, 735);
+			this->leftMainMarg->Size = System::Drawing::Size(25, 598);
 			this->leftMainMarg->TabIndex = 4;
 			// 
 			// sidebar
@@ -175,17 +174,16 @@ namespace stockManagement {
 			this->sidebar->Controls->Add(this->panel2);
 			this->sidebar->Controls->Add(this->panel1);
 			this->sidebar->Dock = System::Windows::Forms::DockStyle::Left;
-			this->sidebar->Location = System::Drawing::Point(33, 131);
-			this->sidebar->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->sidebar->Location = System::Drawing::Point(25, 106);
 			this->sidebar->Name = L"sidebar";
-			this->sidebar->Size = System::Drawing::Size(408, 735);
+			this->sidebar->Size = System::Drawing::Size(306, 598);
 			this->sidebar->TabIndex = 5;
 			// 
 			// SideBarBuyBtn
 			// 
 			this->SideBarBuyBtn->BackColor = System::Drawing::Color::White;
 			this->SideBarBuyBtn->BackgroundColor = System::Drawing::Color::White;
-			this->SideBarBuyBtn->ButtonText = L"Achats";
+			this->SideBarBuyBtn->ButtonText = L"Purchases";
 			this->SideBarBuyBtn->CausesValidation = false;
 			this->SideBarBuyBtn->Dock = System::Windows::Forms::DockStyle::Top;
 			this->SideBarBuyBtn->ErrorImageLeft = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"SideBarBuyBtn.ErrorImageLeft")));
@@ -198,31 +196,31 @@ namespace stockManagement {
 			this->SideBarBuyBtn->ImageLeft = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"SideBarBuyBtn.ImageLeft")));
 			this->SideBarBuyBtn->ImageRight = nullptr;
 			this->SideBarBuyBtn->LeftPictureColor = System::Drawing::Color::Transparent;
-			this->SideBarBuyBtn->Location = System::Drawing::Point(33, 355);
-			this->SideBarBuyBtn->Margin = System::Windows::Forms::Padding(5, 5, 5, 5);
+			this->SideBarBuyBtn->Location = System::Drawing::Point(25, 289);
+			this->SideBarBuyBtn->Margin = System::Windows::Forms::Padding(4);
 			this->SideBarBuyBtn->Name = L"SideBarBuyBtn";
 			this->SideBarBuyBtn->PaddingLeftPicture = System::Windows::Forms::Padding(0);
 			this->SideBarBuyBtn->PaddingRightPicture = System::Windows::Forms::Padding(0);
 			this->SideBarBuyBtn->RightPictureColor = System::Drawing::Color::Transparent;
-			this->SideBarBuyBtn->Size = System::Drawing::Size(342, 59);
+			this->SideBarBuyBtn->Size = System::Drawing::Size(256, 48);
 			this->SideBarBuyBtn->SizeModeLeft = System::Windows::Forms::PictureBoxSizeMode::CenterImage;
 			this->SideBarBuyBtn->SizeModeRight = System::Windows::Forms::PictureBoxSizeMode::Normal;
 			this->SideBarBuyBtn->TabIndex = 11;
+			this->SideBarBuyBtn->Click += gcnew System::EventHandler(this, &mainForm::SideBarBuyBtn_Click);
 			// 
 			// panel7
 			// 
 			this->panel7->Dock = System::Windows::Forms::DockStyle::Top;
-			this->panel7->Location = System::Drawing::Point(33, 333);
-			this->panel7->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->panel7->Location = System::Drawing::Point(25, 271);
 			this->panel7->Name = L"panel7";
-			this->panel7->Size = System::Drawing::Size(342, 22);
+			this->panel7->Size = System::Drawing::Size(256, 18);
 			this->panel7->TabIndex = 10;
 			// 
 			// SideBarSellBtn
 			// 
 			this->SideBarSellBtn->BackColor = System::Drawing::Color::White;
 			this->SideBarSellBtn->BackgroundColor = System::Drawing::Color::White;
-			this->SideBarSellBtn->ButtonText = L"Ventes";
+			this->SideBarSellBtn->ButtonText = L"Sales";
 			this->SideBarSellBtn->CausesValidation = false;
 			this->SideBarSellBtn->Dock = System::Windows::Forms::DockStyle::Top;
 			this->SideBarSellBtn->ErrorImageLeft = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"SideBarSellBtn.ErrorImageLeft")));
@@ -235,31 +233,31 @@ namespace stockManagement {
 			this->SideBarSellBtn->ImageLeft = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"SideBarSellBtn.ImageLeft")));
 			this->SideBarSellBtn->ImageRight = nullptr;
 			this->SideBarSellBtn->LeftPictureColor = System::Drawing::Color::Transparent;
-			this->SideBarSellBtn->Location = System::Drawing::Point(33, 274);
-			this->SideBarSellBtn->Margin = System::Windows::Forms::Padding(5, 5, 5, 5);
+			this->SideBarSellBtn->Location = System::Drawing::Point(25, 223);
+			this->SideBarSellBtn->Margin = System::Windows::Forms::Padding(4);
 			this->SideBarSellBtn->Name = L"SideBarSellBtn";
 			this->SideBarSellBtn->PaddingLeftPicture = System::Windows::Forms::Padding(0);
 			this->SideBarSellBtn->PaddingRightPicture = System::Windows::Forms::Padding(0);
 			this->SideBarSellBtn->RightPictureColor = System::Drawing::Color::Transparent;
-			this->SideBarSellBtn->Size = System::Drawing::Size(342, 59);
+			this->SideBarSellBtn->Size = System::Drawing::Size(256, 48);
 			this->SideBarSellBtn->SizeModeLeft = System::Windows::Forms::PictureBoxSizeMode::CenterImage;
 			this->SideBarSellBtn->SizeModeRight = System::Windows::Forms::PictureBoxSizeMode::Normal;
 			this->SideBarSellBtn->TabIndex = 9;
+			this->SideBarSellBtn->Click += gcnew System::EventHandler(this, &mainForm::SideBarSellBtn_Click);
 			// 
 			// panel6
 			// 
 			this->panel6->Dock = System::Windows::Forms::DockStyle::Top;
-			this->panel6->Location = System::Drawing::Point(33, 252);
-			this->panel6->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->panel6->Location = System::Drawing::Point(25, 205);
 			this->panel6->Name = L"panel6";
-			this->panel6->Size = System::Drawing::Size(342, 22);
+			this->panel6->Size = System::Drawing::Size(256, 18);
 			this->panel6->TabIndex = 8;
 			// 
 			// SideBarFournisseurBtn
 			// 
 			this->SideBarFournisseurBtn->BackColor = System::Drawing::Color::White;
 			this->SideBarFournisseurBtn->BackgroundColor = System::Drawing::Color::White;
-			this->SideBarFournisseurBtn->ButtonText = L"Fournisseurs";
+			this->SideBarFournisseurBtn->ButtonText = L"Supplier";
 			this->SideBarFournisseurBtn->CausesValidation = false;
 			this->SideBarFournisseurBtn->Dock = System::Windows::Forms::DockStyle::Top;
 			this->SideBarFournisseurBtn->ErrorImageLeft = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"SideBarFournisseurBtn.ErrorImageLeft")));
@@ -272,24 +270,24 @@ namespace stockManagement {
 			this->SideBarFournisseurBtn->ImageLeft = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"SideBarFournisseurBtn.ImageLeft")));
 			this->SideBarFournisseurBtn->ImageRight = nullptr;
 			this->SideBarFournisseurBtn->LeftPictureColor = System::Drawing::Color::Transparent;
-			this->SideBarFournisseurBtn->Location = System::Drawing::Point(33, 193);
-			this->SideBarFournisseurBtn->Margin = System::Windows::Forms::Padding(5, 5, 5, 5);
+			this->SideBarFournisseurBtn->Location = System::Drawing::Point(25, 157);
+			this->SideBarFournisseurBtn->Margin = System::Windows::Forms::Padding(4);
 			this->SideBarFournisseurBtn->Name = L"SideBarFournisseurBtn";
 			this->SideBarFournisseurBtn->PaddingLeftPicture = System::Windows::Forms::Padding(0);
 			this->SideBarFournisseurBtn->PaddingRightPicture = System::Windows::Forms::Padding(0);
 			this->SideBarFournisseurBtn->RightPictureColor = System::Drawing::Color::Transparent;
-			this->SideBarFournisseurBtn->Size = System::Drawing::Size(342, 59);
+			this->SideBarFournisseurBtn->Size = System::Drawing::Size(256, 48);
 			this->SideBarFournisseurBtn->SizeModeLeft = System::Windows::Forms::PictureBoxSizeMode::CenterImage;
 			this->SideBarFournisseurBtn->SizeModeRight = System::Windows::Forms::PictureBoxSizeMode::Normal;
 			this->SideBarFournisseurBtn->TabIndex = 7;
+			this->SideBarFournisseurBtn->Click += gcnew System::EventHandler(this, &mainForm::SideBarFournisseurBtn_Click);
 			// 
 			// panel5
 			// 
 			this->panel5->Dock = System::Windows::Forms::DockStyle::Top;
-			this->panel5->Location = System::Drawing::Point(33, 171);
-			this->panel5->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->panel5->Location = System::Drawing::Point(25, 139);
 			this->panel5->Name = L"panel5";
-			this->panel5->Size = System::Drawing::Size(342, 22);
+			this->panel5->Size = System::Drawing::Size(256, 18);
 			this->panel5->TabIndex = 6;
 			// 
 			// SideBarClientBtn
@@ -309,24 +307,24 @@ namespace stockManagement {
 			this->SideBarClientBtn->ImageLeft = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"SideBarClientBtn.ImageLeft")));
 			this->SideBarClientBtn->ImageRight = nullptr;
 			this->SideBarClientBtn->LeftPictureColor = System::Drawing::Color::Transparent;
-			this->SideBarClientBtn->Location = System::Drawing::Point(33, 112);
-			this->SideBarClientBtn->Margin = System::Windows::Forms::Padding(5, 5, 5, 5);
+			this->SideBarClientBtn->Location = System::Drawing::Point(25, 91);
+			this->SideBarClientBtn->Margin = System::Windows::Forms::Padding(4);
 			this->SideBarClientBtn->Name = L"SideBarClientBtn";
 			this->SideBarClientBtn->PaddingLeftPicture = System::Windows::Forms::Padding(0);
 			this->SideBarClientBtn->PaddingRightPicture = System::Windows::Forms::Padding(0);
 			this->SideBarClientBtn->RightPictureColor = System::Drawing::Color::Transparent;
-			this->SideBarClientBtn->Size = System::Drawing::Size(342, 59);
+			this->SideBarClientBtn->Size = System::Drawing::Size(256, 48);
 			this->SideBarClientBtn->SizeModeLeft = System::Windows::Forms::PictureBoxSizeMode::CenterImage;
 			this->SideBarClientBtn->SizeModeRight = System::Windows::Forms::PictureBoxSizeMode::Normal;
 			this->SideBarClientBtn->TabIndex = 5;
+			this->SideBarClientBtn->Click += gcnew System::EventHandler(this, &mainForm::SideBarClientBtn_Click);
 			// 
 			// panel4
 			// 
 			this->panel4->Dock = System::Windows::Forms::DockStyle::Top;
-			this->panel4->Location = System::Drawing::Point(33, 90);
-			this->panel4->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->panel4->Location = System::Drawing::Point(25, 73);
 			this->panel4->Name = L"panel4";
-			this->panel4->Size = System::Drawing::Size(342, 22);
+			this->panel4->Size = System::Drawing::Size(256, 18);
 			this->panel4->TabIndex = 4;
 			// 
 			// SideBarProductBtn
@@ -346,13 +344,13 @@ namespace stockManagement {
 			this->SideBarProductBtn->ImageLeft = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"SideBarProductBtn.ImageLeft")));
 			this->SideBarProductBtn->ImageRight = nullptr;
 			this->SideBarProductBtn->LeftPictureColor = System::Drawing::Color::Transparent;
-			this->SideBarProductBtn->Location = System::Drawing::Point(33, 31);
-			this->SideBarProductBtn->Margin = System::Windows::Forms::Padding(5, 5, 5, 5);
+			this->SideBarProductBtn->Location = System::Drawing::Point(25, 25);
+			this->SideBarProductBtn->Margin = System::Windows::Forms::Padding(4);
 			this->SideBarProductBtn->Name = L"SideBarProductBtn";
 			this->SideBarProductBtn->PaddingLeftPicture = System::Windows::Forms::Padding(0);
 			this->SideBarProductBtn->PaddingRightPicture = System::Windows::Forms::Padding(0);
 			this->SideBarProductBtn->RightPictureColor = System::Drawing::Color::Transparent;
-			this->SideBarProductBtn->Size = System::Drawing::Size(342, 59);
+			this->SideBarProductBtn->Size = System::Drawing::Size(256, 48);
 			this->SideBarProductBtn->SizeModeLeft = System::Windows::Forms::PictureBoxSizeMode::CenterImage;
 			this->SideBarProductBtn->SizeModeRight = System::Windows::Forms::PictureBoxSizeMode::Normal;
 			this->SideBarProductBtn->TabIndex = 3;
@@ -361,55 +359,51 @@ namespace stockManagement {
 			// panel3
 			// 
 			this->panel3->Dock = System::Windows::Forms::DockStyle::Right;
-			this->panel3->Location = System::Drawing::Point(375, 31);
-			this->panel3->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->panel3->Location = System::Drawing::Point(281, 25);
 			this->panel3->Name = L"panel3";
-			this->panel3->Size = System::Drawing::Size(33, 704);
+			this->panel3->Size = System::Drawing::Size(25, 573);
 			this->panel3->TabIndex = 2;
 			// 
 			// panel2
 			// 
 			this->panel2->Dock = System::Windows::Forms::DockStyle::Left;
-			this->panel2->Location = System::Drawing::Point(0, 31);
-			this->panel2->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->panel2->Location = System::Drawing::Point(0, 25);
 			this->panel2->Name = L"panel2";
-			this->panel2->Size = System::Drawing::Size(33, 704);
+			this->panel2->Size = System::Drawing::Size(25, 573);
 			this->panel2->TabIndex = 1;
 			// 
 			// panel1
 			// 
 			this->panel1->Dock = System::Windows::Forms::DockStyle::Top;
 			this->panel1->Location = System::Drawing::Point(0, 0);
-			this->panel1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->panel1->Name = L"panel1";
-			this->panel1->Size = System::Drawing::Size(408, 31);
+			this->panel1->Size = System::Drawing::Size(306, 25);
 			this->panel1->TabIndex = 0;
 			// 
 			// sideBarMarg
 			// 
 			this->sideBarMarg->Dock = System::Windows::Forms::DockStyle::Left;
-			this->sideBarMarg->Location = System::Drawing::Point(441, 131);
-			this->sideBarMarg->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->sideBarMarg->Location = System::Drawing::Point(331, 106);
 			this->sideBarMarg->Name = L"sideBarMarg";
-			this->sideBarMarg->Size = System::Drawing::Size(27, 735);
+			this->sideBarMarg->Size = System::Drawing::Size(20, 598);
 			this->sideBarMarg->TabIndex = 6;
 			// 
 			// mainContainer
 			// 
 			this->mainContainer->BackColor = System::Drawing::Color::White;
 			this->mainContainer->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->mainContainer->Location = System::Drawing::Point(468, 131);
-			this->mainContainer->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->mainContainer->Location = System::Drawing::Point(351, 106);
 			this->mainContainer->Name = L"mainContainer";
-			this->mainContainer->Size = System::Drawing::Size(1299, 735);
+			this->mainContainer->Size = System::Drawing::Size(974, 598);
 			this->mainContainer->TabIndex = 7;
+			this->mainContainer->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &mainForm::mainContainer_Paint);
 			// 
 			// mainForm
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::WhiteSmoke;
-			this->ClientSize = System::Drawing::Size(1800, 897);
+			this->ClientSize = System::Drawing::Size(1350, 729);
 			this->Controls->Add(this->mainContainer);
 			this->Controls->Add(this->sideBarMarg);
 			this->Controls->Add(this->sidebar);
@@ -418,7 +412,7 @@ namespace stockManagement {
 			this->Controls->Add(this->topMainMarg);
 			this->Controls->Add(this->botMainMarg);
 			this->Controls->Add(this->navBar);
-			this->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->Margin = System::Windows::Forms::Padding(2);
 			this->Name = L"mainForm";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"mainForm";
@@ -451,6 +445,30 @@ private: System::Void SideBarProductBtn_Click(System::Object^ sender, System::Ev
 	ProductUserControl^ product = gcnew ProductUserControl();
 	ShowUserControl(product);
 	
+}
+private: System::Void mainContainer_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
+}
+private: System::Void SideBarClientBtn_Click(System::Object^ sender, System::EventArgs^ e) {
+	
+	ClientUserControl^ Client = gcnew ClientUserControl();
+	ShowUserControl(Client);
+
+}
+private: System::Void SideBarFournisseurBtn_Click(System::Object^ sender, System::EventArgs^ e) {
+	SupplierUserControlcpp^ supplier = gcnew SupplierUserControlcpp();
+	ShowUserControl(supplier);
+
+}
+private: System::Void SideBarBuyBtn_Click(System::Object^ sender, System::EventArgs^ e) {
+	purchaseUserControl^ purchase = gcnew purchaseUserControl();
+	ShowUserControl(purchase);
+
+
+}
+private: System::Void SideBarSellBtn_Click(System::Object^ sender, System::EventArgs^ e) {
+	SalesUserControl^ sales = gcnew SalesUserControl();
+	ShowUserControl(sales);
+
 }
 };
 }
