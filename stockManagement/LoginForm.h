@@ -1,5 +1,5 @@
 #pragma once
-#include "mainForm.h";
+#include "mainForm.h"
 
 
 namespace stockManagement {

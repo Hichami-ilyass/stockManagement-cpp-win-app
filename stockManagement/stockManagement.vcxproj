@@ -116,24 +116,18 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.5.3">
-      <HintPath>..\..\Bunifu_UI_v1.5.3.dll</HintPath>
+      <HintPath>..\..\..\..\..\Downloads\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
     <Reference Include="FlatButton">
-      <HintPath>..\..\..\Desktop\JControls\FlatButton.dll</HintPath>
-    </Reference>
-    <Reference Include="JDragControl">
-      <HintPath>..\..\..\..\..\Downloads\JControls\JControls\JDragControl.dll</HintPath>
+      <HintPath>..\..\..\..\..\Downloads\JControls\JControls\FlatButton.dll</HintPath>
     </Reference>
     <Reference Include="JMetroTextBox">
-      <HintPath>..\..\..\Desktop\JControls\JMetroTextBox.dll</HintPath>
+      <HintPath>..\..\..\..\..\Downloads\JControls\JControls\JMetroTextBox.dll</HintPath>
     </Reference>
     <Reference Include="JTextBox">
-      <HintPath>..\..\..\Downloads\JTextBox.dll</HintPath>
+      <HintPath>C:\Users\othman\Desktop\JTextBox.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
-    <Reference Include="Microsoft.VisualBasic.PowerPacks">
-      <HintPath>Microsoft.VisualBasic.PowerPacks</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
